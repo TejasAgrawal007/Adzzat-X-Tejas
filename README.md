@@ -1,5 +1,6 @@
 # Adzzat-X-Tejas
 
+```
 Step 1:
 
 The target repository has already been finalized. Do not suggest alternative repositories or modify the selection. Your sole responsibility is to analyze the existing repository and its currently open GitHub issues.
@@ -36,6 +37,7 @@ Use the provided example issue only as a difficulty and quality benchmark. Do 
 
 Problem Description : 
 
+```
 
 Step 2:
 
