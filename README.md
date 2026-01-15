@@ -39,6 +39,7 @@ Problem Description :
 
 ```
 
+```
 Step 2:
 
 Strict Task Specification (HighLevel / Venus-Aligned)
@@ -74,8 +75,10 @@ Phase 2 — Bug Detection via Strict Testing
 3. Execute the new tests
     * If all new tests pass, the issue is no longer present → STOP.
     * If any new test fails, the issue is confirmed → proceed.
+```
 
-Phase 3 — Task Packaging (task-1/)
+```
+Step 3 — Task Packaging (task-1/)
 If the issue is confirmed, create a folder named:
 task-1/
 This folder must contain exactly three files:
@@ -133,7 +136,9 @@ Generation Rules
 * Formatting changes
 * Dependency changes
 * Extra files
+```
 
+```
 Phase 4 — Quality Bar (Hard Requirements)
 The task is invalid if any of the following are true:
 * Fewer than 11 tests
@@ -147,9 +152,10 @@ The task is invalid if any of the following are true:
 
 Core Principle (Must Be Followed)
 Everything tested must be described. Everything described must be testable. Nothing extra. Nothing missing.
+```
 
-
-Step 3:
+```
+Step 5:
 
 While writing problem.md and creating test cases to validate the bug/behavior, you must strictly follow the rules below:
 📄 Problem.md Quality Rules
@@ -200,7 +206,9 @@ A sample task from another Venus submission has been provided.
 
    🔧 Solution Implementation & Verification Phase (Strict)
 After completing task creation (task-1/problem.md, Dockerfile, test.patch), proceed with solution implementation as follows:
+```
 
+```
 Phase 5 — Solve the Issue (Controlled Scope)
 1. Solve the problem in the target repository
     * Apply fixes strictly within the repository’s existing architecture.
@@ -232,8 +240,10 @@ Phase 6 — Create solution.patch
 * Debug logs
 * Commented-out code
 * Cleanup unrelated to the bug
+```
 
-Phase 7 — End-to-End Verification (Mandatory)
+```
+Phase 6 — End-to-End Verification (Mandatory)
 To confirm correctness, perform the entire flow from scratch:
 Validation Steps
 1. Create a fresh directory:    mkdir test-project && cd test-project
@@ -257,11 +267,11 @@ The solution is considered valid only if:
 * No existing functionality is broken
 * All behavior fixed is explicitly described in problem.md
 If any step fails → solution is rejecte
+```
 
 
 
-
-
+```
 Problem description have appropriate length (target: 100-200 words)
 
 Problem description matches the selected category
@@ -283,10 +293,10 @@ Problem description contains only necessary information (AI, up to 2 min)
 Problem and tests are aligned (AI, up to 1 min)
 
 
-Phantom Lineage Termination in Cardinality-Expanding Projections
+```
 
-
+```
 “You are an automated test-driven programming problem validator. First, generate an original UTF-8 problem description of 100–200 words that strictly matches the given category, is non-plagiarized, clear, unambiguous, and contains only necessary information; internally verify word count, originality, category match, and clarity. Then create a flawed base implementation and a base test suite such that all base tests pass on the base implementation while the implementation does not fully satisfy the problem. Perform test-patch sanity checks to ensure tests compile and run. Next, generate a clean patch (diff) that applies to the base code and fixes all missing logic without changing tests. After that, generate a new hidden test suite that fully reflects the problem and includes edge cases so that before the patch base tests pass but new tests fail, and after the patch both base and new tests pass. Finally, run AI quality gates including problem description sanity, problem–test alignment, test quality, no ambiguity, no leakage, and originality, and output in this order: problem description, base implementation, base tests, solution patch, new tests, and a validation pass/fail matrix.”
 
-
+```
 
